@@ -1,12 +1,13 @@
-# 📄 My Resume — Simple Web Resume Page
+# 📄 My Resume — Styled Web Resume Page
 
 <div align="center">
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Live-brightgreen?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
-**A clean, single-page HTML resume — showcasing the professional profile of *Gautam Chauhan*.**
+**A clean, modern, single-page HTML + CSS resume — showcasing the professional profile of *Gautam Chauhan*.**
 
 </div>
 
@@ -22,7 +23,7 @@
 
 ## ✨ Overview
 
-This is a lightweight **static HTML resume page** built with semantic markup. It presents:
+This is a lightweight **HTML + CSS resume page** built with semantic markup and a polished, card-style design. It presents:
 
 - 🧑‍💼 Name, title & contact details
 - 📝 A professional summary
@@ -31,7 +32,14 @@ This is a lightweight **static HTML resume page** built with semantic markup. It
 - 🛠️ Technical skills
 - © Footer with copyright
 
-No frameworks, no dependencies — just pure, semantic **HTML5**.
+**Design highlights:**
+- 🎨 Soft gradient background (`#e0e7ff → #f0f4ff`) with a dark slate header/footer
+- 🃏 Card-style container with rounded corners and a soft drop shadow
+- 🔵 Blue accent underlines on section headings
+- ✨ Subtle hover effect on each section (light background transition)
+- 📱 Fully responsive layout with a mobile breakpoint at `600px`
+
+No frameworks, no dependencies — just pure **HTML5 + CSS3**.
 
 ---
 
@@ -39,12 +47,18 @@ No frameworks, no dependencies — just pure, semantic **HTML5**.
 
 ```mermaid
 flowchart TD
-    A[📄 My Resume Page] --> B[🏷️ Header]
+    A[📄 My Resume Page] --> S[🎨 CSS Styling Layer]
+    A --> B[🏷️ Header]
     A --> C[📝 Summary]
     A --> D[🎓 Education]
     A --> E[💼 Work Experience]
     A --> F[🛠️ Skills]
     A --> G[© Footer]
+
+    S --> S1[Gradient background]
+    S --> S2[Card container + shadow]
+    S --> S3[Section hover effect]
+    S --> S4[Responsive breakpoint]
 
     B --> B1[Name: Gautam Chauhan]
     B --> B2[Title: Web Developer]
@@ -62,6 +76,7 @@ flowchart TD
     F --> F3[Git & GitHub]
 
     style A fill:#4f46e5,color:#fff,stroke:#333,stroke-width:2px
+    style S fill:#ec4899,color:#fff
     style E fill:#f59e0b,color:#fff
     style D fill:#0ea5e9,color:#fff
     style F fill:#10b981,color:#fff
@@ -74,6 +89,7 @@ flowchart TD
 | Technology | Purpose |
 |------------|---------|
 | **HTML5**  | Page structure & semantic markup |
+| **CSS3**   | Styling, layout, gradients, shadows & responsiveness |
 
 ---
 
@@ -81,8 +97,8 @@ flowchart TD
 
 ```
 📦 my-resume
- ┣ 📜 index.html          → Main HTML file
- ┣ 🖼️ resume_preview.png   → Screenshot of the page
+ ┣ 📜 index.html          → Main HTML file (with embedded CSS)
+ ┣ 🖼️ resume_preview.png   → Screenshot of the styled page
  ┗ 📄 README.md            → You are here!
 ```
 
@@ -118,12 +134,13 @@ flowchart TD
 
 ## 🔮 Future Improvements
 
-- [ ] Add CSS styling for a polished, professional layout
-- [ ] Make the page responsive for mobile & tablet
+- [x] Add CSS styling for a polished, professional layout
+- [x] Make the page responsive for mobile & tablet
 - [ ] Add a downloadable PDF version button
 - [ ] Add icons next to contact details and skills
 - [ ] Add a "Projects" section with links
 - [ ] Add print-friendly styles for physical resumes
+- [ ] Add dark mode toggle
 
 ---
 
