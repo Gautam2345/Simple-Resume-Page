@@ -5,47 +5,172 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e0e7ff, #f0f4ff);
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 2rem 1rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e293b, #334155);
+            color: #f8fafc;
+            text-align: center;
+            padding: 2.5rem 2rem;
+            border-radius: 16px 16px 0 0;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        header h1 {
+            font-size: 2.4rem;
+            margin-bottom: 0.3rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1rem;
+            color: #cbd5e1;
+        }
+
+        header p:last-of-type {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        section {
+            background: #ffffff;
+            width: 100%;
+            max-width: 800px;
+            padding: 1.8rem 2rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            color: #1e293b;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #3b82f6;
+            display: inline-block;
+        }
+
+        section p {
+            margin-bottom: 0.5rem;
+        }
+
+        section ul {
+            margin-top: 0.5rem;
+            padding-left: 1.5rem;
+        }
+
+        section ul li {
+            margin-bottom: 0.4rem;
+        }
+
+        footer {
+            background: #1e293b;
+            color: #94a3b8;
+            text-align: center;
+            padding: 1.2rem 2rem;
+            border-radius: 0 0 16px 16px;
+            width: 100%;
+            max-width: 800px;
+            font-size: 0.9rem;
+        }
+
+        /* Container wrapper for all sections */
+        .resume-container {
+            width: 100%;
+            max-width: 800px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        section:hover {
+            background: #f8fafc;
+            transition: background 0.2s ease;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem 0.5rem;
+            }
+
+            header {
+                padding: 1.8rem 1.2rem;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            section {
+                padding: 1.4rem 1.2rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>Gautam Chauhan</h1>
-        <p>Web Developer</p>
-        <p>Email: Gautam.chauhan@example.com | Phone: (123) 456-789</p>
-    </header>
+    <div class="resume-container">
+        <header>
+            <h1>Gautam Chauhan</h1>
+            <p>Web Developer</p>
+            <p>Email: Gautam.chauhan@example.com | Phone: (123) 456-789</p>
+        </header>
 
-    <section>
-        <h2>Summary</h2>
-        <p>Passionate web developer with experience in building responsive and user-friendly websites using HTML, CSS,
-            and JavaScript.</p>
-    </section>
+        <section>
+            <h2>Summary</h2>
+            <p>Passionate web developer with experience in building responsive and user-friendly websites using HTML,
+                CSS, and JavaScript.</p>
+        </section>
 
-    <section>
-        <h2>Education</h2>
-        <p><strong>B Tech in Computer Science</strong>, University of Example - 2020</p>
-    </section>
+        <section>
+            <h2>Education</h2>
+            <p><strong>B Tech in Computer Science</strong>, University of Example - 2020</p>
+        </section>
 
-    <section>
-        <h2>Work Experience</h2>
-        <p><strong>Frontend Developer</strong>, ABC Web Agency (2021 - Present)</p>
-        <ul>
-            <li>Developed landing pages for marketing campaigns</li>
-            <li>Collaborated with designers and backend developers</li>
-        </ul>
-    </section>
+        <section>
+            <h2>Work Experience</h2>
+            <p><strong>Frontend Developer</strong>, ABC Web Agency (2021 - Present)</p>
+            <ul>
+                <li>Developed landing pages for marketing campaigns</li>
+                <li>Collaborated with designers and backend developers</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>Git & GitHub</li>
-        </ul>
-    </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </section>
 
-    <footer>
-        <p>&copy; 2025 Gautam Chauhan</p>
-    </footer>
+        <footer>
+            <p>&copy; 2025 Gautam Chauhan</p>
+        </footer>
+    </div>
 </body>
 
 </html>
